@@ -160,7 +160,7 @@ export default function EligibilityChecker({ isOpen, onClose }: EligibilityCheck
                 <div className="space-y-4">
                   <h4 className="text-base font-semibold text-black">2. Which is your dream destination?</h4>
                   <div className="grid grid-cols-2 gap-3">
-                    {["USA", "Canada", "UK", "Australia", "Germany"].map((c) => (
+                    {["USA", "Canada", "UK", "Australia", "Europe"].map((c) => (
                       <button
                         key={c}
                         type="button"

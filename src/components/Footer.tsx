@@ -139,7 +139,7 @@ export default function Footer() {
               { href: "/destinations/canada", text: "Canada" },
               { href: "/destinations/uk", text: "United Kingdom" },
               { href: "/destinations/australia", text: "Australia" },
-              { href: "/destinations/germany", text: "Germany" }
+              { href: "/destinations/europe", text: "Europe" }
             ].map((item, idx) => (
               <li key={idx}>
                 <Link href={item.href} className="hover:text-orange-400 hover:translate-x-1 flex items-center transition-all duration-300">
@@ -157,7 +157,6 @@ export default function Footer() {
           </h4>
           <ul className="space-y-3 text-[13.5px] text-white/60">
             {[
-              { href: "#about", text: "About Us", isScroll: true },
               { href: "#success-stories", text: "Success Stories", isScroll: true },
               { href: "#blog", text: "Blog", isScroll: true }
             ].map((item, idx) => (
@@ -242,16 +241,7 @@ export default function Footer() {
       {/* Soft orange base glow at the bottom center of the footer */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[700px] h-[280px] bg-orange-600/[0.08] rounded-full blur-[120px] pointer-events-none" />
 
-      {/* World Map Outline Overlay */}
-      <div 
-        className="absolute inset-0 opacity-[0.04] select-none pointer-events-none invert"
-        style={{
-          backgroundImage: "url('/images/world-map.svg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat"
-        }}
-      />
+
       
     </footer>
   );

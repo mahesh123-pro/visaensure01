@@ -52,7 +52,13 @@ export default function SectionHeading({
 
       {/* The orange rule under every section title — the one piece of
           structural colour that ties the whole site together. */}
-      <span className={`accent-bar mt-6 ${isCenter ? "mx-auto" : ""}`} />
+      <motion.span
+        initial={{ width: 0, opacity: 0 }}
+        whileInView={{ width: "2.5rem", opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+        className={`accent-bar mt-6 ${isCenter ? "mx-auto" : ""}`}
+      />
 
       {description && (
         <p

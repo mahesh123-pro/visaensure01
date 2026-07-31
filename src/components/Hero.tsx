@@ -45,49 +45,6 @@ export default function Hero({ onOpenAssessment, onOpenBooking }: HeroProps) {
       {/* ELITE LAYOUT BACKGROUNDS */}
       {/* ========================================================================= */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-        {/* World Map Outline Layer (3% Opacity) */}
-        <div 
-          className="absolute inset-0 opacity-[0.035] select-none pointer-events-none"
-          style={{
-            backgroundImage: "url('/images/world-map.svg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat"
-          }}
-        />
-
-        {/* Global Aviation / Travel Routes Curves (under 5% opacity) */}
-        <svg
-          className="absolute inset-0 w-full h-full opacity-[0.04] stroke-orange-600"
-          viewBox="0 0 1440 900"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <motion.path
-            d="M 850 420 Q 550 180 250 320"
-            strokeWidth="1.2"
-            strokeDasharray="6 6"
-            initial={{ strokeDashoffset: 100 }}
-            animate={{ strokeDashoffset: 0 }}
-            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
-          />
-          <motion.path
-            d="M 850 420 Q 720 220 580 290"
-            strokeWidth="1.2"
-            strokeDasharray="6 6"
-            initial={{ strokeDashoffset: 100 }}
-            animate={{ strokeDashoffset: 0 }}
-            transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
-          />
-          <motion.path
-            d="M 850 420 Q 1080 620 1220 700"
-            strokeWidth="1.2"
-            strokeDasharray="6 6"
-            initial={{ strokeDashoffset: 100 }}
-            animate={{ strokeDashoffset: 0 }}
-            transition={{ duration: 28, repeat: Infinity, ease: "linear" }}
-          />
-        </svg>
 
         {/* Slow floating subtle glow particles */}
         <div className="absolute inset-0 overflow-hidden">
@@ -171,7 +128,7 @@ export default function Hero({ onOpenAssessment, onOpenBooking }: HeroProps) {
           {/* Trust Indicators */}
           <motion.div
             variants={itemVariants}
-            className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-x-6 gap-y-7 pt-8 border-t border-ink-200 max-w-xl mx-auto lg:mx-0"
+            className="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-3 md:gap-4 pt-8 border-t border-ink-200/80 max-w-xl mx-auto lg:mx-0"
           >
             {[
               { icon: Users, value: "10K+", label: "Clients served" },
@@ -179,16 +136,21 @@ export default function Hero({ onOpenAssessment, onOpenBooking }: HeroProps) {
               { icon: Globe, value: "50+", label: "Countries" },
               { icon: ShieldAlert, value: "5+ yrs", label: "Experience" },
             ].map(({ icon: Icon, value, label, accent }) => (
-              <div key={label} className="text-center lg:text-left">
-                <Icon className="w-4 h-4 text-orange-600 mx-auto lg:mx-0 mb-2" />
+              <div
+                key={label}
+                className="p-3.5 rounded-2xl bg-white/70 backdrop-blur-sm border border-ink-200/60 shadow-sm hover:border-orange-300 hover:shadow-md transition-all duration-300 group text-center lg:text-left"
+              >
+                <div className="w-7 h-7 rounded-lg bg-orange-50 border border-orange-200/60 flex items-center justify-center mx-auto lg:mx-0 mb-2 group-hover:scale-110 group-hover:bg-orange-600 group-hover:text-white transition-all duration-300 text-orange-600">
+                  <Icon className="w-3.5 h-3.5 stroke-[2.2]" />
+                </div>
                 <div
-                  className={`text-2xl font-bold font-heading tracking-tight ${
+                  className={`text-xl font-bold font-heading tracking-tight ${
                     accent ? "text-orange-700" : "text-ink-900"
                   }`}
                 >
                   {value}
                 </div>
-                <span className="mt-0.5 block text-xs text-ink-500 font-medium">
+                <span className="mt-0.5 block text-[11px] text-ink-500 font-medium leading-snug">
                   {label}
                 </span>
               </div>

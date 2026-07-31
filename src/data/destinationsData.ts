@@ -176,12 +176,12 @@ export const destinationsData: Record<string, DestinationData> = {
       },
     ],
   },
-  germany: {
-    id: "germany",
-    name: "Germany",
+  europe: {
+    id: "europe",
+    name: "Europe",
     flag: "🇩🇪",
     tagline: "Europe's Largest Economy & Free Education",
-    description: "Germany is a powerhouse of engineering and technology. With essentially free public university education and the new Opportunity Card, it is incredibly attractive for global talent.",
+    description: "Europe is a powerhouse of engineering and technology. With essentially free public university education and the new Opportunity Card, it is incredibly attractive for global talent.",
     stats: [
       { label: "Public Tuition", value: "€0 (mostly)" },
       { label: "Job Seekers", value: "Opportunity Card" },
@@ -195,7 +195,7 @@ export const destinationsData: Record<string, DestinationData> = {
       },
       {
         title: "Opportunity Card (Chancenkarte)",
-        description: "A new points-based system allowing skilled non-EU citizens to enter Germany for one year to look for a job.",
+        description: "A new points-based system allowing skilled non-EU citizens to enter Europe for one year to look for a job.",
         iconName: "Briefcase",
       },
       {
@@ -206,8 +206,8 @@ export const destinationsData: Record<string, DestinationData> = {
     ],
     faqs: [
       {
-        q: "Is education really free in Germany?",
-        a: "Yes, most public universities in Germany do not charge tuition fees for bachelor's and master's programs, only a small semester contribution.",
+        q: "Is education really free in Europe?",
+        a: "Yes, most public universities in Europe do not charge tuition fees for bachelor's and master's programs, only a small semester contribution.",
       },
       {
         q: "Do I need to speak German to work there?",
@@ -285,8 +285,8 @@ export const destinationsData: Record<string, DestinationData> = {
       },
     ],
   },
-  europe: {
-    id: "europe",
+  schengen: {
+    id: "schengen",
     name: "Europe (Schengen)",
     flag: "🇪🇺",
     tagline: "Access 27 Countries with One Visa",

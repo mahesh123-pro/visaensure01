@@ -245,9 +245,23 @@ p { text-wrap: pretty; }
 }
 
 .card-hover:hover {
-  transform: translateY(-4px);
-  border-color: var(--color-orange-200);
-  box-shadow: var(--shadow-e3);
+  transform: translateY(-5px);
+  border-color: var(--color-orange-300);
+  box-shadow: 0 12px 32px rgba(255, 107, 0, 0.08), var(--shadow-e3);
+}
+
+.card-interactive {
+  background: var(--color-surface);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-e1);
+  transition: all 400ms var(--ease-out-expo);
+}
+
+.card-interactive:hover {
+  transform: translateY(-6px) scale(1.01);
+  border-color: var(--color-orange-400);
+  box-shadow: 0 20px 40px -15px rgba(255, 107, 0, 0.15), var(--shadow-e4);
 }
 
 /* Dark-section counterpart. On true black a lower-alpha fill reads

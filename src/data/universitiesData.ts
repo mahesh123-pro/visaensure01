@@ -77,7 +77,7 @@ export const universitiesData = {
     "Kent Institute Australia", "IIBIT Sydney", "Excelsia University College",
     "Stanley College", "ECA College"
   ],
-  "Germany": [
+  "Europe": [
     "Technical University of Munich", "Ludwig Maximilian University of Munich",
     "Heidelberg University", "RWTH Aachen University", "Karlsruhe Institute of Technology",
     "Humboldt University of Berlin", "Free University of Berlin", "Technical University of Berlin",
@@ -104,5 +104,5 @@ export const countryFlags: Record<string, string> = {
   "United Kingdom": "🇬🇧",
   "Canada": "🇨🇦",
   "Australia": "🇦🇺",
-  "Germany": "🇩🇪"
+  "Europe": "🇩🇪"
 };

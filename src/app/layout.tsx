@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   description: "Experience luxury travel and high-trust immigration consultancy. Expert visa guidance for study, work, migration, and tourism from Hyderabad to the world.",
   keywords: ["visa consultancy", "study abroad", "immigration platform", "work visa", "PR visa", "Hyderabad visa consultants", "VisaEnsure"],
   metadataBase: new URL("https://www.visaensure.com"),
+  icons: {
+    icon: "/images/visaensureLogoForWebsite/12.png",
+    shortcut: "/images/visaensureLogoForWebsite/12.png",
+    apple: "/images/visaensureLogoForWebsite/12.png",
+  },
   openGraph: {
     title: "VisaEnsure | Your Trusted Visa Companion",
     description: "Expert visa guidance for study, work, migration, and tourism with a trusted success-driven process.",

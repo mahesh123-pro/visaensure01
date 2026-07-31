@@ -11,7 +11,7 @@ const COUNTRY_DETAILS: Record<string, { capital: string; timezone: string; offse
   "Canada": { capital: "Ottawa", timezone: "EST", offset: -5, visas: ["Express Entry PR", "Student Visa", "Work Permit", "Super Visa"] },
   "United Kingdom": { capital: "London", timezone: "GMT", offset: 0, visas: ["Student Visa", "Skilled Worker", "Standard Visitor", "Innovator Founder"] },
   "Australia": { capital: "Canberra", timezone: "AEST", offset: 10, visas: ["Subclass 189 PR", "Subclass 500 Student", "TSS 482 Work"] },
-  "Germany": { capital: "Berlin", timezone: "CET", offset: 1, visas: ["Opportunity Card", "Student Visa", "Schengen Visitor", "EU Blue Card"] },
+  "Europe": { capital: "Berlin", timezone: "CET", offset: 1, visas: ["Opportunity Card", "Student Visa", "Schengen Visitor", "EU Blue Card"] },
   "Ireland": { capital: "Dublin", timezone: "GMT", offset: 0, visas: ["Stamp 1G / Stamp 4", "Higher Education Student", "C-Visit Visitor"] },
   "New Zealand": { capital: "Wellington", timezone: "NZST", offset: 12, visas: ["Accredited Work", "Fee Paying Student", "Visitor Visa"] },
   "India": { capital: "New Delhi", timezone: "IST", offset: 5.5, visas: ["e-Tourist Visa", "Business Visa", "Employment Visa"] },
@@ -27,7 +27,7 @@ const RINGS_DATA = [
   { lat: 56.1304, lng: -106.3468, maxRadius: 10, color: '#FF6B00' }, // Canada
   { lat: 55.3781, lng: -3.4360, maxRadius: 10, color: '#FF6B00' }, // UK
   { lat: -25.2744, lng: 133.7751, maxRadius: 10, color: '#FF6B00' }, // Australia
-  { lat: 51.1657, lng: 10.4515, maxRadius: 10, color: '#FF6B00' } // Germany
+  { lat: 51.1657, lng: 10.4515, maxRadius: 10, color: '#FF6B00' } // Europe
 ];
 
 const DESTINATIONS = [
@@ -35,7 +35,7 @@ const DESTINATIONS = [
   { name: "Canada", lat: 56.1304, lng: -106.3468, flag: "🇨🇦" },
   { name: "United Kingdom", lat: 55.3781, lng: -3.4360, flag: "🇬🇧" },
   { name: "Australia", lat: -25.2744, lng: 133.7751, flag: "🇦🇺" },
-  { name: "Germany", lat: 51.1657, lng: 10.4515, flag: "🇩🇪" }
+  { name: "Europe", lat: 51.1657, lng: 10.4515, flag: "🇩🇪" }
 ];
 
 

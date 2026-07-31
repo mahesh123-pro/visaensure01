@@ -57,9 +57,9 @@ const REGION_VIEWBOXES = {
 
 // Target countries configuration for each visa type
 const HIGHLIGHTED_COUNTRIES: Record<"student" | "work" | "migration", string[]> = {
-  student: ["United States of America", "Canada", "United Kingdom", "Australia", "Germany"],
-  work: ["United States of America", "Canada", "United Kingdom", "Australia", "Germany"],
-  migration: ["Canada", "Australia", "United Kingdom", "New Zealand", "Germany"],
+  student: ["United States of America", "Canada", "United Kingdom", "Australia", "Europe"],
+  work: ["United States of America", "Canada", "United Kingdom", "Australia", "Europe"],
+  migration: ["Canada", "Australia", "United Kingdom", "New Zealand", "Europe"],
 };
 
 export default function InteractivePlaneWorldMap({ visaType }: InteractivePlaneWorldMapProps) {
@@ -251,8 +251,8 @@ export default function InteractivePlaneWorldMap({ visaType }: InteractivePlaneW
       ],
       link: "/services/australia-pr"
     },
-    "Germany": {
-      name: "Germany",
+    "Europe": {
+      name: "Europe",
       code: "DE",
       accentColor: "#10B981", // Green
       headline: visaType === "migration"
@@ -261,10 +261,10 @@ export default function InteractivePlaneWorldMap({ visaType }: InteractivePlaneW
           ? "Tuition-Free Public Higher Education"
           : "Opportunity Card (Chancenkarte) & Jobs",
       desc: visaType === "migration"
-        ? "Germany has modernized its residency laws, allowing university graduates and skilled workers to qualify for a Settlement Permit in as little as 21-24 months of working."
+        ? "Europe has modernized its residency laws, allowing university graduates and skilled workers to qualify for a Settlement Permit in as little as 21-24 months of working."
         : visaType === "student"
           ? "Unlocks top-tier German universities at public institutions which charge zero tuition fees, coupled with an 18-month job seeker visa extension post-graduation."
-          : "Move directly to Germany on the points-based Opportunity Card to search for qualified work in tech, mechanical engineering, and automotive sectors.",
+          : "Move directly to Europe on the points-based Opportunity Card to search for qualified work in tech, mechanical engineering, and automotive sectors.",
       stats: visaType === "migration"
         ? [
             { label: "Blue Card PR Settle", value: "21-27 Months" },
@@ -295,9 +295,9 @@ export default function InteractivePlaneWorldMap({ visaType }: InteractivePlaneW
       ],
       pathways: [
         { name: "EU Blue Card PR Fast-Track", type: "Settlement Permit", duration: "2 Months", desc: "Blue Card holders qualify for permanent residence in 21 months with B1 German, or 27 months with A1 German." },
-        { name: "Skilled Settlement Permit", type: "Permanent Residence", duration: "3 Months", desc: "For vocational/degree holders who have worked legally in Germany for 4 years." }
+        { name: "Skilled Settlement Permit", type: "Permanent Residence", duration: "3 Months", desc: "For vocational/degree holders who have worked legally in Europe for 4 years." }
       ],
-      link: "/services/germany-job-seeker-visa"
+      link: "/services/europe-job-seeker-visa"
     },
     "New Zealand": {
       name: "New Zealand",

@@ -102,9 +102,9 @@ const destinations: Record<string, DestinationInfo> = {
       },
     ],
   },
-  Germany: {
-    name: "Germany",
-    slug: "germany-job-seeker-visa",
+  Europe: {
+    name: "Europe",
+    slug: "europe-job-seeker-visa",
     desc: "Europe's industrial powerhouse. High tech and engineering opportunities. The new Chancenkarte points visa makes migration easier.",
     metrics: [
       { label: "Visa Processing", value: "6-8 Weeks" },
@@ -115,7 +115,7 @@ const destinations: Record<string, DestinationInfo> = {
       {
         icon: <Briefcase className="w-5 h-5 text-orange-500" />,
         title: "Opportunity Card (Chancenkarte)",
-        desc: "Enter Germany on a points checklist to find employment.",
+        desc: "Enter Europe on a points checklist to find employment.",
       },
       {
         icon: <Landmark className="w-5 h-5 text-orange-500" />,
@@ -138,38 +138,7 @@ export default function Destinations() {
       <div className="absolute bottom-[10%] left-[5%] w-[350px] h-[350px] rounded-full bg-orange-600/4 blur-[130px] pointer-events-none" />
 
       {/* Global Connection lines / map background */}
-      <div 
-        className="absolute inset-0 opacity-[0.025] select-none pointer-events-none"
-        style={{
-          backgroundImage: "url('/images/world-map.svg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat"
-        }}
-      />
-      <svg
-        className="absolute inset-0 w-full h-full opacity-[0.03] stroke-orange-600 pointer-events-none"
-        viewBox="0 0 1440 900"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <motion.path
-          d="M 200 300 Q 500 150 800 250"
-          strokeWidth="1.2"
-          strokeDasharray="6 6"
-          initial={{ strokeDashoffset: 100 }}
-          animate={{ strokeDashoffset: 0 }}
-          transition={{ duration: 32, repeat: Infinity, ease: "linear" }}
-        />
-        <motion.path
-          d="M 600 400 Q 900 600 1200 500"
-          strokeWidth="1.2"
-          strokeDasharray="6 6"
-          initial={{ strokeDashoffset: 100 }}
-          animate={{ strokeDashoffset: 0 }}
-          transition={{ duration: 26, repeat: Infinity, ease: "linear" }}
-        />
-      </svg>
+
 
       <div className="shell relative z-10">
         <SectionHeading
@@ -179,24 +148,24 @@ export default function Destinations() {
           description="Compare pathways, processing times, and costs for the world's leading economies."
         />
 
-        {/* Tabs selector — underline tabs read as navigation, which is what
-            these actually are. */}
-        <div className="flex gap-1 justify-start lg:justify-center border-b border-white/10 mb-10 overflow-x-auto no-scrollbar">
+        {/* Tabs selector — elevated pill tabs for crisp selection */}
+        <div className="flex gap-2 justify-start lg:justify-center p-1.5 bg-white/[0.04] border border-white/10 rounded-2xl mb-10 overflow-x-auto no-scrollbar max-w-fit mx-auto">
           {Object.keys(destinations).map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`relative px-5 py-3.5 text-sm font-semibold whitespace-nowrap transition-colors cursor-pointer ${
+              className={`relative px-5 py-2.5 text-sm font-semibold rounded-xl whitespace-nowrap transition-all duration-300 cursor-pointer ${
                 activeTab === tab
-                  ? "text-orange-400"
-                  : "text-white/50 hover:text-white/80"
+                  ? "text-white shadow-md"
+                  : "text-white/50 hover:text-white/90 hover:bg-white/[0.05]"
               }`}
             >
-              {tab === "USA" ? "United States" : tab}
+              <span className="relative z-10">{tab === "USA" ? "United States" : tab}</span>
               {activeTab === tab && (
                 <motion.span
                   layoutId="destination-tab"
-                  className="absolute left-3 right-3 -bottom-px h-0.5 bg-orange-500 rounded-full"
+                  className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-500 rounded-xl"
+                  transition={{ type: "spring", stiffness: 400, damping: 30 }}
                 />
               )}
             </button>

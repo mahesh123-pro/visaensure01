@@ -10,7 +10,6 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 
 // Dynamic Imports for below-the-fold sections to drastically improve load time
-const Trust = dynamic(() => import("@/components/Trust"));
 const Services = dynamic(() => import("@/components/Services"));
 const Destinations = dynamic(() => import("@/components/Destinations"));
 const WhyChoose = dynamic(() => import("@/components/WhyChoose"));
@@ -73,11 +72,6 @@ export default function Home() {
           onOpenAssessment={() => setIsAssessmentOpen(true)}
           onOpenBooking={() => setIsBookingOpen(true)}
         />
-
-        {/* Trust Section */}
-        <SectionReveal className="bg-transparent relative z-10">
-          <Trust />
-        </SectionReveal>
 
         {/* Services Section */}
         <SectionReveal className="surface-muted border-y border-ink-200 relative z-10">

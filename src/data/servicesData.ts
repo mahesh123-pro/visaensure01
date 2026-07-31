@@ -190,18 +190,18 @@ export const servicesData: Record<string, ServiceDetail> = {
     ],
     popularFor: ["Sydney", "Melbourne", "Brisbane", "Perth"]
   },
-  "germany-job-seeker-visa": {
-    id: "germany-job-seeker-visa",
-    title: "Germany Opportunity Card / Job Seeker",
+  "europe-job-seeker-visa": {
+    id: "europe-job-seeker-visa",
+    title: "Europe Opportunity Card / Job Seeker",
     category: "work",
-    metaTitle: "Germany Opportunity Card (Chancenkarte) & Job Seeker Visa | VisaEnsure",
-    metaDescription: "Migrate to Germany using the new Opportunity Card (Chancenkarte). Expert counseling, points calculation, and visa processing by VisaEnsure.",
-    keywords: ["Germany Opportunity Card", "Chancenkarte", "Job seeker Germany", "German work visa", "Germany PR"],
-    headline: "Accelerate Your Tech & Engineering Career in Germany",
+    metaTitle: "Europe Opportunity Card (Chancenkarte) & Job Seeker Visa | VisaEnsure",
+    metaDescription: "Migrate to Europe using the new Opportunity Card (Chancenkarte). Expert counseling, points calculation, and visa processing by VisaEnsure.",
+    keywords: ["Europe Opportunity Card", "Chancenkarte", "Job seeker Europe", "German work visa", "Europe PR"],
+    headline: "Accelerate Your Tech & Engineering Career in Europe",
     subheadline: "Utilize the new Opportunity Card (Chancenkarte) points system or Job Seeker Visa to find work in Europe's largest economy.",
-    introduction: "Germany has introduced the Opportunity Card (Chancenkarte) based on a points system, alongside the traditional Job Seeker Visa. These options allow skilled professionals to move to Germany and search for qualified employment. VisaEnsure provides complete guidance on mapping your credentials, checking points, and preparing the visa application.",
+    introduction: "Europe has introduced the Opportunity Card (Chancenkarte) based on a points system, alongside the traditional Job Seeker Visa. These options allow skilled professionals to move to Europe and search for qualified employment. VisaEnsure provides complete guidance on mapping your credentials, checking points, and preparing the visa application.",
     features: [
-      "Germany Opportunity Card Points Analysis & Strategy",
+      "Europe Opportunity Card Points Analysis & Strategy",
       "Anabin University Registration & ZAB Credential Evaluation",
       "German Format Resume & Cover Letter Styling",
       "Blocked Account Opening Assistance",
@@ -217,13 +217,13 @@ export const servicesData: Record<string, ServiceDetail> = {
     pathway: [
       { step: 1, title: "Credentials Verification & Anabin Check", desc: "We verify if your university and degree are recognized as 'H+' on the German Anabin database. If not, we assist with obtaining a Statement of Comparability from ZAB." },
       { step: 2, title: "Chancenkarte Points Audit", desc: "We calculate your points based on qualifications, language skills, age, and professional experience, ensuring you meet the strict minimum threshold." },
-      { step: 3, title: "Blocked Account & Insurance Setup", desc: "We guide you through opening a blocked bank account in Germany (e.g., Coracle, Expatrio) and depositing the required maintenance funds, alongside securing valid health insurance." },
+      { step: 3, title: "Blocked Account & Insurance Setup", desc: "We guide you through opening a blocked bank account in Europe (e.g., Coracle, Expatrio) and depositing the required maintenance funds, alongside securing valid health insurance." },
       { step: 4, title: "Professional Profile Localization", desc: "Our experts revamp your CV and Cover Letter to strictly adhere to German corporate standards, significantly boosting your job application success rate." },
       { step: 5, title: "Visa Documentation & Interview Prep", desc: "We compile your visa dossier and conduct mock interviews to prepare you for the consular appointment at the German Embassy or VFS." },
-      { step: 6, title: "Relocation & Job Hunting Support", desc: "Land in Germany with confidence. We provide strategies for navigating the German job market and instructions on converting your Opportunity Card to a Work Residence Permit." }
+      { step: 6, title: "Relocation & Job Hunting Support", desc: "Land in Europe with confidence. We provide strategies for navigating the German job market and instructions on converting your Opportunity Card to a Work Residence Permit." }
     ],
     faqs: [
-      { q: "What is the new Germany Opportunity Card (Chancenkarte)?", a: "It is a point-based visa that allows workers to enter Germany to look for a job. You need a minimum of 6 points based on language skills, experience, age, and links to Germany." },
+      { q: "What is the new Europe Opportunity Card (Chancenkarte)?", a: "It is a point-based visa that allows workers to enter Europe to look for a job. You need a minimum of 6 points based on language skills, experience, age, and links to Europe." },
       { q: "Is German language mandatory for the Job Seeker Visa?", a: "While English B2 is sufficient if you target English-speaking tech/engineering roles, basic German (A1/A2) is highly recommended and adds points under the Chancenkarte system." }
     ],
     stats: [

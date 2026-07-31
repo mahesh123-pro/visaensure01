@@ -43,9 +43,9 @@ const testimonials: Testimonial[] = [
     name: "Pooja Hegde",
     avatar: "PH",
     image: "/images/test_pooja.png",
-    country: "Germany",
+    country: "Europe",
     visaType: "Opportunity Card (Chancenkarte)",
-    story: "The new Germany Chancenkarte points system was confusing, but VisaEnsure's eligibility questionnaire and document auditing made it simple. My blocked account and visa filing were completed in record time.",
+    story: "The new Europe Chancenkarte points system was confusing, but VisaEnsure's eligibility questionnaire and document auditing made it simple. My blocked account and visa filing were completed in record time.",
   },
 ];
 

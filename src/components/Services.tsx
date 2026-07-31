@@ -75,7 +75,7 @@ export default function Services({ onOpenAssessment, onOpenChecklist }: Services
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.55, delay: (idx % 3) * 0.08, ease: [0.16, 1, 0.3, 1] }}
-              className="card card-hover flex flex-col group overflow-hidden"
+              className="card-interactive flex flex-col group overflow-hidden"
             >
               {/* Image Banner wrapped in Link */}
               {srv.image ? (
@@ -87,10 +87,13 @@ export default function Services({ onOpenAssessment, onOpenChecklist }: Services
                   <img
                     src={srv.image}
                     alt={srv.title}
-                    className="w-full h-full object-cover group-hover:scale-[1.06] transition-transform duration-700 ease-out"
+                    className="w-full h-full object-cover group-hover:scale-[1.07] transition-transform duration-700 ease-out"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-ink-900/45 via-ink-900/5 to-transparent" />
-                  <div className="absolute bottom-3.5 left-4 w-10 h-10 bg-white/95 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-e2">
+                  <div className="absolute inset-0 bg-gradient-to-t from-ink-900/50 via-ink-900/10 to-transparent" />
+                  <div className="absolute top-3.5 right-3.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[10px] font-bold uppercase tracking-wider text-orange-800 shadow-sm">
+                    Verified Route
+                  </div>
+                  <div className="absolute bottom-3.5 left-4 w-10 h-10 bg-white/95 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-e2 group-hover:scale-110 transition-transform duration-300">
                     {React.cloneElement(srv.icon as React.ReactElement<any>, {
                       className: "w-5 h-5 text-orange-600",
                     })}
@@ -104,8 +107,9 @@ export default function Services({ onOpenAssessment, onOpenChecklist }: Services
 
               <div className="flex flex-col flex-1 p-6">
                 <Link href={`/services/${srv.linkId}`}>
-                  <h3 className="text-lg font-heading text-ink-900 font-bold group-hover:text-orange-700 transition-colors">
-                    {srv.title}
+                  <h3 className="text-lg font-heading text-ink-900 font-bold group-hover:text-orange-600 transition-colors flex items-center justify-between">
+                    <span>{srv.title}</span>
+                    <ArrowRight className="w-4 h-4 text-orange-500 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
                   </h3>
                 </Link>
                 <p className="mt-2.5 text-ink-600 text-sm leading-relaxed font-body">
@@ -113,18 +117,18 @@ export default function Services({ onOpenAssessment, onOpenChecklist }: Services
                 </p>
 
                 {/* Action Links */}
-                <div className="mt-6 pt-4 border-t border-ink-200 flex items-center justify-between text-sm font-semibold">
+                <div className="mt-6 pt-4 border-t border-ink-200/80 flex items-center justify-between text-sm font-semibold">
                   <button
                     onClick={onOpenAssessment}
-                    className="text-ink-600 hover:text-orange-700 transition-colors cursor-pointer"
+                    className="text-ink-600 hover:text-orange-700 transition-colors cursor-pointer text-xs uppercase tracking-wider font-bold"
                   >
                     Check eligibility
                   </button>
                   <Link
                     href={`/services/${srv.linkId}`}
-                    className="text-orange-700 flex items-center gap-1 hover:gap-1.5 hover:text-orange-700 transition-all cursor-pointer"
+                    className="text-orange-700 flex items-center gap-1 hover:gap-1.5 transition-all cursor-pointer font-bold text-xs uppercase tracking-wider"
                   >
-                    <span>Learn more</span>
+                    <span>Explore</span>
                     <ArrowRight className="w-3.5 h-3.5" />
                   </Link>
                 </div>

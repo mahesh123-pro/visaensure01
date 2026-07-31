@@ -60,8 +60,8 @@ const countriesData: Record<string, CountryDetail> = {
     avgSalary: "$70,000 - $95,000/yr",
     visaRoutes: ["Subclass 189 Skilled Independent", "Subclass 190 Skilled Nominated", "Student Visa"],
   },
-  Germany: {
-    name: "Germany",
+  Europe: {
+    name: "Europe",
     code: "DE",
     prEase: "Easy (Opportunity Card + Blue Card fast-track)",
     processingTime: "Opportunity Card: 6-8 Weeks | Student: 4-6 Weeks",

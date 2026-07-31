@@ -37,9 +37,9 @@ const partners: Record<string, PartnerUni[]> = {
     { name: "University of Queensland", location: "Brisbane, Australia", rank: "QS Rank #43" },
   ],
   Europe: [
-    { name: "Technical University of Munich", location: "Munich, Germany", rank: "QS Rank #37" },
-    { name: "Heidelberg University", location: "Heidelberg, Germany", rank: "QS Rank #79" },
-    { name: "ETH Zurich", location: "Zurich, Switzerland", rank: "QS Rank #7" },
+    { name: "Technical University of Munich", location: "Munich, Europe", rank: "QS Rank #37" },
+    { name: "Heidelberg University", location: "Heidelberg, Europe", rank: "QS Rank #79" },
+    { name: "ETH Zurich", location: "Zurich, Europe", rank: "QS Rank #7" },
     { name: "Sorbonne University", location: "Paris, France", rank: "QS Rank #59" },
   ],
 };

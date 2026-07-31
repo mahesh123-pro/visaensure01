@@ -10,28 +10,28 @@ export default function ExitIntentPopup() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [lastClosedTime, setLastClosedTime] = useState<number | null>(null);
 
   useEffect(() => {
-    // Initial popup after 10 seconds
+    const hasSubmitted = localStorage.getItem("visaensure_popup_submitted");
+    if (isOpen || hasSubmitted) return;
+
+    // Initial popup after 10 minutes (600,000ms), recurring popup every 10 minutes (600,000ms)
+    const delay = lastClosedTime === null ? 600000 : 600000;
+
     const timer = setTimeout(() => {
-      const hasSubmitted = localStorage.getItem("visaensure_popup_submitted");
-      if (!hasSubmitted) {
+      const currentlySubmitted = localStorage.getItem("visaensure_popup_submitted");
+      if (!currentlySubmitted) {
         setIsOpen(true);
       }
-    }, 10000);
+    }, delay);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [isOpen, lastClosedTime]);
 
   const handleClose = () => {
     setIsOpen(false);
-    // Recurring popup every 5 minutes (300,000ms)
-    setTimeout(() => {
-      const hasSubmitted = localStorage.getItem("visaensure_popup_submitted");
-      if (!hasSubmitted) {
-        setIsOpen(true);
-      }
-    }, 300000);
+    setLastClosedTime(Date.now());
   };
 
   const handleSubmit = (e: React.FormEvent) => {

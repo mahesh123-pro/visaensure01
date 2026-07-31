@@ -52,16 +52,7 @@ export default function Stats() {
       {/* Subtle orange glow particle */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] rounded-full bg-orange-600/4 blur-[120px] pointer-events-none" />
 
-      {/* Global connection map backdrop */}
-      <div 
-        className="absolute inset-0 opacity-[0.02] select-none pointer-events-none"
-        style={{
-          backgroundImage: "url('/images/world-map.svg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat"
-        }}
-      />
+
 
       <div className="shell relative z-10">
         {/* Hairline dividers between figures read more considered than

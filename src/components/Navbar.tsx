@@ -85,7 +85,7 @@ export default function Navbar({ onOpenAssessment, onOpenBooking, onOpenTracker 
         { label: "USA Study Visa", desc: "Top tech universities & F-1 entry", href: "/services/usa-student-visa" },
         { label: "Canada Study Visa", desc: "SDS pathways & student permits", href: "/services/student-visa" },
         { label: "Australia Study Visa", desc: "Subclass 500 visa applications", href: "/services/student-visa" },
-        { label: "Germany Study Visa", desc: "Free public university pathways", href: "/services/student-visa" },
+        { label: "Europe Study Visa", desc: "Free public university pathways", href: "/services/student-visa" },
       ]
     },
     {
@@ -95,7 +95,7 @@ export default function Navbar({ onOpenAssessment, onOpenBooking, onOpenTracker 
         { label: "All Work Permits", desc: "Global employment authorizations", href: "/services/work-visa" },
         { label: "US H1B Visa", desc: "Specialty occupation sponsorship", href: "/services/h1b-visa" },
         { label: "UK Skilled Worker Visa", desc: "Sponsored jobs & residency route", href: "/services/uk-work-visa" },
-        { label: "Germany Opportunity Card", desc: "Point-based job seeker entrance", href: "/services/germany-job-seeker-visa" },
+        { label: "Europe Opportunity Card", desc: "Point-based job seeker entrance", href: "/services/europe-job-seeker-visa" },
       ]
     },
     {
@@ -135,7 +135,7 @@ export default function Navbar({ onOpenAssessment, onOpenBooking, onOpenTracker 
     { name: "Canada", flag: "🇨🇦", desc: "Welcoming immigrants via Express Entry", visas: ["PR", "Study", "Work"], href: "/destinations/canada" },
     { name: "UK", flag: "🇬🇧", desc: "Excellent education & skilled worker routes", visas: ["Study", "Skilled Worker"], href: "/destinations/uk" },
     { name: "Australia", flag: "🇦🇺", desc: "High quality of life & skilled migration", visas: ["PR", "Study", "Work"], href: "/destinations/australia" },
-    { name: "Germany", flag: "🇩🇪", desc: "Europe's largest economy & free education", visas: ["Job Seeker", "Study"], href: "/destinations/germany" },
+    { name: "Europe", flag: "🇩🇪", desc: "Europe's largest economy & free education", visas: ["Job Seeker", "Study"], href: "/destinations/europe" },
     { name: "New Zealand", flag: "🇳🇿", desc: "Beautiful landscapes & great work-life", visas: ["Study", "Work"], href: "/destinations/new-zealand" },
     { name: "Ireland", flag: "🇮🇪", desc: "Tech hub of Europe with friendly locals", visas: ["Study", "Work"], href: "/destinations/ireland" },
     { name: "Europe", flag: "🇪🇺", desc: "Access 27 countries with Schengen Visa", visas: ["Schengen", "Visit"], href: "/destinations/europe" },
