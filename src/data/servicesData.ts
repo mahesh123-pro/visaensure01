@@ -57,7 +57,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     stats: [
       { label: "Visa Success Rate", value: "98.4%" },
       { label: "Partner Universities", value: "350+" },
-      { label: "Avg. Processing Time", value: "15-30 Days" }
+      { label: "Avg. Processing Time", value: "5-6 Months" }
     ],
     popularFor: ["Stanford", "MIT", "NYU", "UC Berkeley", "USC"]
   },
@@ -100,7 +100,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     stats: [
       { label: "Successful Settlers", value: "3,200+" },
       { label: "PNP Nominations", value: "95%" },
-      { label: "Avg. Processing Time", value: "6-8 Months" }
+      { label: "Avg. Processing Time", value: "8-12 Months" }
     ],
     popularFor: ["Toronto", "Vancouver", "Montreal", "Calgary"]
   },
@@ -143,7 +143,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     stats: [
       { label: "Approved Visas", value: "1,800+" },
       { label: "Sponsor Connections", value: "120+" },
-      { label: "Avg. Processing Time", value: "3-4 Weeks" }
+      { label: "Avg. Processing Time", value: "3-6 Months" }
     ],
     popularFor: ["London", "Manchester", "Birmingham", "Edinburgh"]
   },
@@ -186,7 +186,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     stats: [
       { label: "Successful Migrants", value: "2,500+" },
       { label: "Positive Assessments", value: "99.1%" },
-      { label: "Avg. Processing Time", value: "8-10 Months" }
+      { label: "Avg. Processing Time", value: "6-12 Months" }
     ],
     popularFor: ["Sydney", "Melbourne", "Brisbane", "Perth"]
   },
@@ -229,7 +229,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     stats: [
       { label: "Visa Approvals", value: "950+" },
       { label: "Points Assessments", value: "100%" },
-      { label: "Avg. Processing Time", value: "6-8 Weeks" }
+      { label: "Avg. Processing Time", value: "3-6 Months" }
     ],
     popularFor: ["Berlin", "Munich", "Frankfurt", "Stuttgart"]
   },
@@ -272,7 +272,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     stats: [
       { label: "Visas Stamped", value: "8,500+", },
       { label: "Approval Rating", value: "99.4%" },
-      { label: "Avg. Processing Time", value: "10-15 Days" }
+      { label: "Avg. Processing Time", value: "15 Days to 6 Months" }
     ],
     popularFor: ["Switzerland", "France", "USA", "Singapore", "Dubai"]
   },
@@ -315,7 +315,7 @@ export const servicesData: Record<string, ServiceDetail> = {
     stats: [
       { label: "Successful Petitions", value: "720+" },
       { label: "RFE Success Rate", value: "94.8%" },
-      { label: "Avg. Processing Time", value: "2-3 Months" }
+      { label: "Avg. Processing Time", value: "6-12 Months" }
     ],
     popularFor: ["Silicon Valley", "New York", "Texas", "Seattle"]
   },

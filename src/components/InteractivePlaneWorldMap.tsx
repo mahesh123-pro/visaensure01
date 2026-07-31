@@ -84,7 +84,7 @@ export default function InteractivePlaneWorldMap({ visaType }: InteractivePlaneW
       stats: visaType === "student"
         ? [
             { label: "Visa Success Rate", value: "98.4%" },
-            { label: "Avg. Processing", value: "15-30 Days" },
+            { label: "Avg. Processing", value: "5-6 Months" },
             { label: "Post-Study Work", value: "1-3 Years OPT" }
           ]
         : [
@@ -122,13 +122,13 @@ export default function InteractivePlaneWorldMap({ visaType }: InteractivePlaneW
       stats: visaType === "migration"
         ? [
             { label: "Express Entry Target", value: "110k+/yr" },
-            { label: "Avg. Processing", value: "6 Months" },
+            { label: "Avg. Processing", value: "8-12 Months" },
             { label: "Citizenship Path", value: "3 Years" }
           ]
         : visaType === "student"
           ? [
               { label: "Visa Success Rate", value: "96.2%" },
-              { label: "Avg. Processing", value: "6-8 Weeks" },
+              { label: "Avg. Processing", value: "6-8 Months" },
               { label: "Work Rights", value: "Up to 3 Years" }
             ]
           : [
@@ -177,12 +177,12 @@ export default function InteractivePlaneWorldMap({ visaType }: InteractivePlaneW
         : visaType === "student"
           ? [
               { label: "Visa Success Rate", value: "97.1%" },
-              { label: "Avg. Processing", value: "3 Weeks" },
+              { label: "Avg. Processing", value: "3-6 Months" },
               { label: "Post-Study Work", value: "2 Years Graduate" }
             ]
           : [
               { label: "Average Salary", value: "£52,000/yr" },
-              { label: "Visa Processing", value: "15 Days" },
+              { label: "Visa Processing", value: "3-6 Months" },
               { label: "Sponsor Licences", value: "100k+ Companies" }
             ],
       universities: [
@@ -225,13 +225,13 @@ export default function InteractivePlaneWorldMap({ visaType }: InteractivePlaneW
         : visaType === "student"
           ? [
               { label: "Visa Success Rate", value: "95.5%" },
-              { label: "Avg. Processing", value: "4 Weeks" },
+              { label: "Avg. Processing", value: "4-6 Months" },
               { label: "Post-Study Work", value: "2-4 Years" }
             ]
           : [
               { label: "Average Salary", value: "$85,000 AUD/yr" },
               { label: "Min Wage / Hour", value: "$23.23 AUD" },
-              { label: "Processing Time", value: "25-45 Days" }
+              { label: "Processing Time", value: "3-4 Months" }
             ],
       universities: [
         { name: "University of Melbourne", ranking: "#14 Globally", location: "Melbourne, VIC" },
@@ -245,9 +245,9 @@ export default function InteractivePlaneWorldMap({ visaType }: InteractivePlaneW
         { role: "Registered Nurse / Clinical Manager", salary: "$75,000 - $98,000 AUD", demand: "Critical" }
       ],
       pathways: [
-        { name: "Skilled Independent (Subclass 189)", type: "Federal PR", duration: "8-10 Months", desc: "A direct permanent visa allowing you to live, work, and study anywhere with zero sponsor restrictions." },
-        { name: "Skilled Nominated (Subclass 190)", type: "State Nominated PR", duration: "8-12 Months", desc: "State governments sponsor you, requiring residence in that state for the initial 2 years." },
-        { name: "Skilled Work Regional (Subclass 491)", type: "Provisional PR", duration: "6-9 Months", desc: "5-year visa for regional areas, with a direct pathway to permanent residence after 3 years." }
+        { name: "Skilled Independent (Subclass 189)", type: "Federal PR", duration: "6-12 Months", desc: "A direct permanent visa allowing you to live, work, and study anywhere with zero sponsor restrictions." },
+        { name: "Skilled Nominated (Subclass 190)", type: "State Nominated PR", duration: "6-12 Months", desc: "State governments sponsor you, requiring residence in that state for the initial 2 years." },
+        { name: "Skilled Work Regional (Subclass 491)", type: "Provisional PR", duration: "6-12 Months", desc: "5-year visa for regional areas, with a direct pathway to permanent residence after 3 years." }
       ],
       link: "/services/australia-pr"
     },
@@ -274,7 +274,7 @@ export default function InteractivePlaneWorldMap({ visaType }: InteractivePlaneW
         : visaType === "student"
           ? [
               { label: "Visa Success Rate", value: "94.8%" },
-              { label: "Avg. Processing", value: "6-8 Weeks" },
+              { label: "Avg. Processing", value: "4-6 Months" },
               { label: "Job Search Visa", value: "18 Months" }
             ]
           : [

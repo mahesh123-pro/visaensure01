@@ -62,7 +62,7 @@ export default function Stats() {
             { end: 10000, suffix: "+", label: "Visa consultations completed" },
             { end: 98.6, suffix: "%", decimals: 1, label: "Historical approval success" },
             { end: 50, suffix: "+", label: "Global destinations covered" },
-            { end: 5, suffix: "+ yrs", label: "Flagship agency status" },
+            { end: 15, suffix: "+ yrs", label: "Years of experience" },
           ].map((s) => (
             <div key={s.label} className="text-center px-4">
               <h3 className="text-[2.75rem] md:text-[3.5rem] leading-none tracking-tight">

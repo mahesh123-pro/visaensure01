@@ -15,7 +15,7 @@ export default function WhyChoose() {
     {
       icon: <Award className="w-6 h-6 text-orange-600" />,
       title: "Experienced Consultants",
-      desc: "Our advisors have spent 5+ years handling complex cases, including Refusals, Gap justifications, Backlogs, and Sponsorship audits.",
+      desc: "Our advisors have spent 15+ years handling complex cases, including Refusals, Gap justifications, Backlogs, and Sponsorship audits.",
     },
     {
       icon: <Zap className="w-6 h-6 text-orange-600" />,

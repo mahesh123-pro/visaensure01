@@ -134,7 +134,7 @@ export default function Hero({ onOpenAssessment, onOpenBooking }: HeroProps) {
               { icon: Users, value: "10K+", label: "Clients served" },
               { icon: Award, value: "98.6%", label: "Success rate", accent: true },
               { icon: Globe, value: "50+", label: "Countries" },
-              { icon: ShieldAlert, value: "5+ yrs", label: "Experience" },
+              { icon: ShieldAlert, value: "15+ yrs", label: "Experience" },
             ].map(({ icon: Icon, value, label, accent }) => (
               <div
                 key={label}

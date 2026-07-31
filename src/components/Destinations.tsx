@@ -19,7 +19,7 @@ const destinations: Record<string, DestinationInfo> = {
     slug: "usa-student-visa",
     desc: "Home to the world's most prestigious Ivy League institutions and tech giants in Silicon Valley. Ideal for students, researchers, and tech pioneers.",
     metrics: [
-      { label: "Visa Processing", value: "15-30 Days" },
+      { label: "Visa Processing", value: "5-6 Months" },
       { label: "Post-Study Work", value: "1 to 3 Years" },
       { label: "Average Entry Salary", value: "$85,000/yr" },
     ],
@@ -41,7 +41,7 @@ const destinations: Record<string, DestinationInfo> = {
     slug: "canada-pr",
     desc: "Voted #1 country for quality of life and welcoming social policies. Direct Express Entry permanent residency pathways with fast processing.",
     metrics: [
-      { label: "Visa Processing", value: "6-8 Months (PR)" },
+      { label: "Visa Processing", value: "8-12 Months (PR)" },
       { label: "Post-Study Work", value: "Up to 3 Years" },
       { label: "Average Entry Salary", value: "$65,000/yr" },
     ],
@@ -63,7 +63,7 @@ const destinations: Record<string, DestinationInfo> = {
     slug: "uk-work-visa",
     desc: "Historical global hub with rich cultural heritage. Offers direct Graduate paths and sponsorship options in finance, IT, and medical segments.",
     metrics: [
-      { label: "Visa Processing", value: "3-4 Weeks" },
+      { label: "Visa Processing", value: "3-6 Months" },
       { label: "Post-Study Work", value: "2 Years (Graduate)" },
       { label: "Average Entry Salary", value: "£45,000/yr" },
     ],
@@ -85,7 +85,7 @@ const destinations: Record<string, DestinationInfo> = {
     slug: "australia-pr",
     desc: "Unmatched weather, high minimum wages, and robust medical systems. Direct PR channels based on work skills criteria.",
     metrics: [
-      { label: "Visa Processing", value: "8-10 Months" },
+      { label: "Visa Processing", value: "6-12 Months" },
       { label: "Post-Study Work", value: "2 to 4 Years" },
       { label: "Average Entry Salary", value: "$75,000/yr" },
     ],
@@ -107,7 +107,7 @@ const destinations: Record<string, DestinationInfo> = {
     slug: "europe-job-seeker-visa",
     desc: "Europe's industrial powerhouse. High tech and engineering opportunities. The new Chancenkarte points visa makes migration easier.",
     metrics: [
-      { label: "Visa Processing", value: "6-8 Weeks" },
+      { label: "Visa Processing", value: "4-6 Months" },
       { label: "Job Seek Duration", value: "12 to 18 Months" },
       { label: "Average Entry Salary", value: "€55,000/yr" },
     ],

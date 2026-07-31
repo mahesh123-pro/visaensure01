@@ -13,13 +13,13 @@ interface CalcData {
 const calculatorData: Record<string, Record<string, CalcData>> = {
   USA: {
     Student: {
-      time: "15 to 30 Days",
+      time: "5 to 6 Months",
       fees: "$185 USD (Visa Fee) + $350 USD (SEVIS Fee)",
       window: "Apply 2-3 months prior to program start date",
       fastTrack: "Not available for F-1. Consular slot expedite available on emergency medical/academic grounds.",
     },
     Worker: {
-      time: "2 to 3 Months",
+      time: "6 to 12 Months",
       fees: "$190 USD (Filing Fee) + $460-$2,500+ (Employer Petitions)",
       window: "Apply 6 months prior to employment start date (usually H-1B lottery is in March)",
       fastTrack: "Elite Processing available ($2,805 USD for 15-day USCIS adjudication)",
@@ -31,7 +31,7 @@ const calculatorData: Record<string, Record<string, CalcData>> = {
       fastTrack: "Elite processing available for certain EB-2/EB-3 I-140 petitions ($2,805 USD)",
     },
     Tourist: {
-      time: "10 to 15 Days (post-interview)",
+      time: "5 to 6 Months",
       fees: "$185 USD",
       window: "Apply 3-4 months prior to intended travel (interview wait times vary significantly)",
       fastTrack: "Not available. Standard queue scheduling applies.",
@@ -39,7 +39,7 @@ const calculatorData: Record<string, Record<string, CalcData>> = {
   },
   Canada: {
     Student: {
-      time: "4 to 6 Weeks",
+      time: "6 to 8 Months",
       fees: "$150 CAD (Study Permit) + $85 CAD (Biometrics)",
       window: "Apply immediately upon receiving Letter of Acceptance (LOA)",
       fastTrack: "Student Direct Stream (SDS) provides 20-day processing for eligible countries (requires GIC and paid 1st-yr tuition)",
@@ -51,13 +51,13 @@ const calculatorData: Record<string, Record<string, CalcData>> = {
       fastTrack: "Global Skills Strategy (GSS) offers 2-week processing for highly skilled positions",
     },
     PR: {
-      time: "6 to 8 Months (Express Entry standard)",
+      time: "8 to 12 Months",
       fees: "$1,525 CAD (Application fee + Right of Permanent Residence Fee per adult)",
       window: "Submit complete PR package within 60 days of receiving Invitation to Apply (ITA)",
       fastTrack: "Provincial Nominee Program (PNP) express streams matching Express Entry processing speeds",
     },
     Tourist: {
-      time: "2 to 4 Weeks",
+      time: "3 to 4 Months",
       fees: "$100 CAD (Visitor Visa) + $85 CAD (Biometrics)",
       window: "Apply 2 months prior to intended departure date",
       fastTrack: "Not available. Applications processed sequentially.",
@@ -65,13 +65,13 @@ const calculatorData: Record<string, Record<string, CalcData>> = {
   },
   UK: {
     Student: {
-      time: "3 Weeks",
+      time: "3 to 6 Months",
       fees: "£490 GBP (Visa) + £776 GBP per year (Immigration Health Surcharge)",
       window: "Apply up to 6 months before your course starts",
       fastTrack: "Priority Service (£500 for 5-day decision) or Super Priority (£1,000 for next-day decision)",
     },
     Worker: {
-      time: "3 to 4 Weeks",
+      time: "3 to 6 Months",
       fees: "£719 - £1,500 GBP (CoS & Application) + £1,035 GBP per year (IHS Health Surcharge)",
       window: "Apply up to 3 months before your Certificate of Sponsorship (CoS) start date",
       fastTrack: "Priority Service (£500 for 5-day decision) or Super Priority (£1,000 for next-day decision)",
@@ -83,7 +83,7 @@ const calculatorData: Record<string, Record<string, CalcData>> = {
       fastTrack: "Super Priority Service (£1,000 for next-working-day decision) is available at select locations",
     },
     Tourist: {
-      time: "2 to 3 Weeks",
+      time: "15 to 20 Days",
       fees: "£115 GBP (Standard 6-month visitor visa)",
       window: "Apply up to 3 months prior to travel dates",
       fastTrack: "Priority Visa Service (£500 for 5-day decision)",
