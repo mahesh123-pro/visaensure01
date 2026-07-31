@@ -30,7 +30,6 @@ const ChecklistGenerator = dynamic(() => import("@/components/ChecklistGenerator
 import SmoothScroll from "@/components/SmoothScroll";
 const WhatsAppButton = dynamic(() => import("@/components/WhatsAppButton"), { ssr: false });
 const AIChat = dynamic(() => import("@/components/AIChat"), { ssr: false });
-const ExitIntentPopup = dynamic(() => import("@/components/ExitIntentPopup"), { ssr: false });
 
 // Modals (Load only when needed, but they are controlled by state, so we just lazy load the component code)
 const BookingModal = dynamic(() => import("@/components/BookingModal"), { ssr: false });
@@ -150,7 +149,6 @@ export default function Home() {
         {/* Floating Widgets */}
         <WhatsAppButton />
         <AIChat />
-        <ExitIntentPopup />
 
         {/* Dialog Overlays */}
         <BookingModal isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
