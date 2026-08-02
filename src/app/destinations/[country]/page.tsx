@@ -17,6 +17,7 @@ import {
 import TopBar from "@/components/TopBar";
 import Footer from "@/components/Footer";
 import { destinationsData, DestinationData } from "@/data/destinationsData";
+import DestinationMapAndClock from "@/components/DestinationMapAndClock";
 
 // Type definition for page props in Next.js App Router dynamic routes
 interface DestinationPageProps {
@@ -121,6 +122,9 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
               ))}
             </div>
           </div>
+
+          {/* Geographical Map, Local Time & Currency Section */}
+          <DestinationMapAndClock countryId={countryKey} />
 
           {/* Visa Pathways Grid */}
           <div className="mt-16 space-y-8">

@@ -89,6 +89,111 @@ const calculatorData: Record<string, Record<string, CalcData>> = {
       fastTrack: "Priority Visa Service (£500 for 5-day decision)",
     },
   },
+  Australia: {
+    Student: {
+      time: "1 to 3 Months",
+      fees: "$1,600 AUD (Visa Application Charge)",
+      window: "Apply at least 3 months before course starts (requires CoE)",
+      fastTrack: "Not available. Priority processing given to offshore applications with high-ranking universities.",
+    },
+    Worker: {
+      time: "2 to 5 Months",
+      fees: "$3,310 AUD (Subclass 482 Mid-Term) + Employer sponsorship costs",
+      window: "Apply within 3-4 months of nomination approval",
+      fastTrack: "Accredited sponsor processing provides fast-track nomination in 5 days",
+    },
+    PR: {
+      time: "6 to 12 Months",
+      fees: "$4,640 AUD (Primary Applicant fee)",
+      window: "Submit Expression of Interest (EOI) at any time. Submit visa within 60 days of ITA.",
+      fastTrack: "State/Territory nominated streams (Subclass 190) and regional streams (Subclass 491) receive faster processing.",
+    },
+    Tourist: {
+      time: "15 to 30 Days",
+      fees: "$195 AUD (Offshore application fee)",
+      window: "Apply 1-2 months before intended travel",
+      fastTrack: "Fast-track option available for certain passport holders (e.g., China) for additional fee ($1,000 AUD)",
+    },
+  },
+  Europe: {
+    Student: {
+      time: "2 to 3 Months (Long Stay Type D)",
+      fees: "€99 EUR + Local handling fees",
+      window: "Apply 3 months prior to academic program start date",
+      fastTrack: "Not available. Varies by specific member state embassy.",
+    },
+    Worker: {
+      time: "2 to 4 Months (Long Stay Type D)",
+      fees: "€99 EUR + Local administrative fees",
+      window: "Apply 2-3 months before employment contract begins",
+      fastTrack: "Varies by country; some states offer fast-track employer schemes (e.g. Germany, Netherlands).",
+    },
+    PR: {
+      time: "6 to 12 Months (Long-Term Resident status)",
+      fees: "€100 to €250 EUR depending on country",
+      window: "Apply after 5 years of continuous legal residence in a member state",
+      fastTrack: "Not available. Long-term residence applications are subject to strict residency audits.",
+    },
+    Tourist: {
+      time: "15 to 45 Days (Type C Schengen)",
+      fees: "€90 EUR (Adults) / €45 EUR (Children)",
+      window: "Apply 1.5 to 6 months before your intended travel dates",
+      fastTrack: "Urgent humanitarian slots can be requested via specific embassies.",
+    },
+  },
+  "New Zealand": {
+    Student: {
+      time: "2 to 3 Months",
+      fees: "$375 NZD (Average visa fee) + International student levy",
+      window: "Apply 2-3 months before course starts (requires offer of place and tuition receipt)",
+      fastTrack: "Not available. Standard queuing applies.",
+    },
+    Worker: {
+      time: "1 to 2 Months",
+      fees: "$750 NZD (AEWV application fee) + Employer job check costs",
+      window: "Apply within 3 months of employer job check approval",
+      fastTrack: "Green List roles (Straight to Residence / Work to Residence) receive priority processing",
+    },
+    PR: {
+      time: "6 to 12 Months (Skilled Migrant Category)",
+      fees: "$4,290 NZD (Resident visa fee)",
+      window: "Submit Expression of Interest (EOI) once 6 points threshold is met",
+      fastTrack: "Straight to Residence Green List roles bypass standard points queues for direct application",
+    },
+    Tourist: {
+      time: "10 to 25 Days",
+      fees: "$246 NZD (Visitor Visa) / $17 NZD (NZeTA online)",
+      window: "Apply at least 1 month prior to travel (or 72 hours for NZeTA)",
+      fastTrack: "NZeTA is processed instantly (within 72 hours) for eligible visa-waiver countries",
+    },
+  },
+  Japan: {
+    Student: {
+      time: "1 to 3 Months",
+      fees: "¥3,000 JPY (Single Entry)",
+      window: "Apply after receiving Certificate of Eligibility (CoE)",
+      fastTrack: "Not available. Standard embassy queue.",
+    },
+    Worker: {
+      time: "1 to 3 Months",
+      fees: "¥3,000 JPY (Single Entry)",
+      window: "Apply after employer secures Certificate of Eligibility (CoE) in Japan",
+      fastTrack: "Highly Skilled Professional (HSP) visa provides priority processing",
+    },
+    PR: {
+      time: "4 to 8 Months",
+      fees: "¥8,000 JPY (Upon approval)",
+      window: "Apply after 10 years continuous residence, or 1-3 years for HSP",
+      fastTrack: "Highly Skilled Professionals with 80+ points can apply after just 1 year",
+    },
+    Tourist: {
+      time: "1 to 2 Weeks",
+      fees: "¥3,000 JPY (Single Entry) / ¥6,000 JPY (Multiple)",
+      window: "Apply 1 month prior to travel via VFS/Embassy or e-Visa system",
+      fastTrack: "Not available. Processed in order of receipt.",
+    },
+  },
+
 };
 
 export default function Calculator() {
@@ -122,6 +227,10 @@ export default function Calculator() {
             <option value="USA">United States</option>
             <option value="Canada">Canada</option>
             <option value="UK">United Kingdom</option>
+            <option value="Australia">Australia</option>
+            <option value="Europe">Europe (Schengen)</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Japan">Japan</option>
           </select>
         </div>
         <div>

@@ -79,7 +79,6 @@ export default function Contact() {
                         setFormData({ ...formData, name: e.target.value });
                         if (errors.name) setErrors({ ...errors, name: "" });
                       }}
-                      placeholder="Rajesh Kumar"
                       className={`field ${errors.name ? '!border-red-500' : ''}`}
                     />
                     {errors.name && <p className="text-xs text-red-600 mt-1.5 font-medium">{errors.name}</p>}
@@ -95,7 +94,6 @@ export default function Contact() {
                         setFormData({ ...formData, email: e.target.value });
                         if (errors.email) setErrors({ ...errors, email: "" });
                       }}
-                      placeholder="rajesh@gmail.com"
                       className={`field ${errors.email ? '!border-red-500' : ''}`}
                     />
                     {errors.email && <p className="text-xs text-red-600 mt-1.5 font-medium">{errors.email}</p>}
@@ -114,7 +112,6 @@ export default function Contact() {
                         setFormData({ ...formData, phone: e.target.value });
                         if (errors.phone) setErrors({ ...errors, phone: "" });
                       }}
-                      placeholder="+91 96424 42227"
                       className={`field ${errors.phone ? '!border-red-500' : ''}`}
                     />
                     {errors.phone && <p className="text-xs text-red-600 mt-1.5 font-medium">{errors.phone}</p>}
